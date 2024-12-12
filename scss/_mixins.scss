@@ -1,0 +1,12 @@
+@mixin flex-container($items: center , $justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $items;
+}
+
+@mixin titles {
+  font-size: 25px;
+  color: #d7e0f9;
+  text-align: left;
+  margin-left: 5px;
+}

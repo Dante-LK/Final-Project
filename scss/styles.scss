@@ -1,3 +1,108 @@
 @import 'variables';
 @import 'mixins';
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+header {
+  @include flex-container;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  img {
+    height: 50px;
+    cursor: pointer;
+  }
+}
+
+.nav-menu {
+  ul {
+    @include flex-container;
+    list-style: none;
+    gap: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #f9d71c;
+  }
+
+}
+
+.search-bar {
+  input {
+    padding: 5px 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+  }
+
+  input::placeholder{
+    color: #aaa;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    ul{
+      @include flex-container;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .search-bar {
+    input {
+      width: 100%;
+    }
+  }
+
+}
+
+.main-sec{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  h2{
+    @include titles;
+  }
+
+  .cards{
+    @include flex-container($justify: none);
+    gap: 20px;
+    width: 100%;
+    .card{
+      width: 201px;
+      img{
+        width: 200px;
+      }
+      border: 1px solid black;
+    }
+
+  }
+
+}
