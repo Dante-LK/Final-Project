@@ -99,6 +99,7 @@ header .fa-bars {
   flex-wrap: wrap;
   gap: 20px;
   width: 100%;
+  margin-bottom: 50px;
 }
 .main-sec .cards .card {
   background-color: #171717;
