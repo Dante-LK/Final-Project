@@ -15,6 +15,9 @@ header {
   top: 0;
   z-index: 1;
 }
+header .fa-bars {
+  display: none;
+}
 
 .logo img {
   height: 50px;
@@ -54,16 +57,15 @@ header {
   color: #aaa;
 }
 
-@media (max-width: 768px) {
-  .nav-menu ul {
+@media (max-width: 900px) {
+  header .fa-bars {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
   }
-  .search-bar input {
-    width: 100%;
+  .nav-menu {
+    display: none;
+  }
+  .search-bar {
+    display: none;
   }
 }
 .main-sec {
@@ -91,8 +93,10 @@ header {
 }
 .main-sec .cards .card {
   width: 201px;
+  height: 350px;
   border: 1px solid black;
 }
 .main-sec .cards .card img {
-  width: 200px;
+  width: 100%;
+  height: 200px;
 }/*# sourceMappingURL=styles.css.map */
