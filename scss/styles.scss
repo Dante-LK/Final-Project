@@ -102,16 +102,35 @@ header {
 
   .cards{
     @include flex-container($justify: none);
+    flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     .card{
-      width: 201px;
-      height: 350px;
+      background-color: #171717;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      width: 210px;
+      height: 420px;
       img{
         width: 100%;
-        height: 200px;
+        height: 300px;
+        border-radius: 10px;
       }
-      border: 1px solid black;
+      border-radius: 10px;
+      h3{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Roboto;
+        text-align: left;
+        color: #aaa;
+      }
+      p{
+        font-size: 12px;
+        font-weight: 400;
+        font-family: Roboto;
+        text-align: left;
+        color: #aaa;
+      }
     }
 
   }

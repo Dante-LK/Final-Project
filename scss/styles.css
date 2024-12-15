@@ -88,15 +88,34 @@ header .fa-bars {
   display: flex;
   justify-content: none;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
   width: 100%;
 }
 .main-sec .cards .card {
-  width: 201px;
-  height: 350px;
-  border: 1px solid black;
+  background-color: #171717;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 210px;
+  height: 420px;
+  border-radius: 10px;
 }
 .main-sec .cards .card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+.main-sec .cards .card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto;
+  text-align: left;
+  color: #aaa;
+}
+.main-sec .cards .card p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto;
+  text-align: left;
+  color: #aaa;
 }/*# sourceMappingURL=styles.css.map */
