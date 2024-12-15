@@ -6,7 +6,23 @@
 
 @mixin titles {
   font-size: 25px;
-  color: #d7e0f9;
+  color: #ffffff;
   text-align: left;
   margin-left: 5px;
+}
+
+@mixin title-background {
+  background-color: #171717;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 50px;
+}
+
+@mixin card{
+  background-color: #171717;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 210px;
+  height: 420px;
 }

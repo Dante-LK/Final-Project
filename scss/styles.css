@@ -78,15 +78,23 @@ header .fa-bars {
   text-align: center;
   font-size: 30px;
 }
-.main-sec h2 {
+.main-sec .title {
+  background-color: #171717;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 50px;
+}
+.main-sec .title h2 {
   font-size: 25px;
-  color: #d7e0f9;
+  color: #ffffff;
   text-align: left;
   margin-left: 5px;
+  text-align: center;
 }
 .main-sec .cards {
   display: flex;
-  justify-content: none;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;

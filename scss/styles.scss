@@ -96,21 +96,23 @@ header {
     font-size: 30px;
   }
 
-  h2{
-    @include titles;
+  .title{
+    @include title-background;
+    h2{
+      @include titles;
+      text-align: center;
+    }
   }
 
+  
+
   .cards{
-    @include flex-container($justify: none);
+    @include flex-container($justify: space-between);
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
     .card{
-      background-color: #171717;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      padding: 10px;
-      width: 210px;
-      height: 420px;
+      @include card;
       img{
         width: 100%;
         height: 300px;
