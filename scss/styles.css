@@ -79,6 +79,9 @@ header .fa-bars {
   font-size: 30px;
 }
 .main-sec .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #171717;
   margin-bottom: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -94,7 +97,7 @@ header .fa-bars {
 }
 .main-sec .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;

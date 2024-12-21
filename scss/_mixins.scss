@@ -12,6 +12,7 @@
 }
 
 @mixin title-background {
+  @include flex-container($justify: center);
   background-color: #171717;
   margin-bottom: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);

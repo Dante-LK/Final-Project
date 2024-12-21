@@ -107,7 +107,7 @@ header {
   
 
   .cards{
-    @include flex-container($justify: space-between);
+    @include flex-container($justify: center);
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
