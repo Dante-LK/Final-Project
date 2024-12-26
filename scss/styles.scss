@@ -92,12 +92,14 @@ header {
   text-align: center;
   font-size: 30px;
 
+
   p {
     font-size: 25px;
     font-weight: 400;
     font-family: Roboto;
     text-align: left;
     color: #aaa;
+    margin-bottom: 5px;
   }
 
 
@@ -106,6 +108,21 @@ header {
     text-align: center;
     font-size: 30px;
   }
+
+  .Aimgdiv {
+    @include flex-container;
+    flex-wrap: wrap;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    .aboutimg {
+      display: inline-block;
+      width: 1400px;
+      height: 600px;
+      border-radius: 10px
+    }
+  }
+
 
   .title {
     @include title-background;
