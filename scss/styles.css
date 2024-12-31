@@ -219,32 +219,40 @@ header .fa-bars {
   transform: scale(0.95);
   box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
 }
-.main-sec form .formdiv {
+.main-sec footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #1f1f1f;
   border-radius: 10px;
   padding: 20px;
 }
-.main-sec form .formdiv h1 {
+.main-sec footer .FormDiv {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+.main-sec footer .FormDiv img {
+  position: absolute;
+  width: 70px;
+  bottom: 10px;
+  left: 10px;
+}
+.main-sec footer .FormDiv h1 {
   text-align: left;
 }
-.main-sec form .formdiv .inputDiv {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: flex-start;
-}
-.main-sec form .formdiv .textinput {
-  display: inline-block;
+.main-sec footer .FormDiv .textinput {
+  display: block;
   width: 370px;
   height: 59px;
   color: #000;
   background-color: #2c2c2c;
   border: none;
   border-radius: 10px;
-  display: block;
   margin-bottom: 20px;
 }
-.main-sec form .formdiv .button {
+.main-sec footer .FormDiv .button {
+  display: block;
   margin-top: 5px;
   text-align: center;
   text-decoration: none;
@@ -261,31 +269,70 @@ header .fa-bars {
   border-radius: 10px;
   width: 370px;
   height: 59px;
-  display: inline-block;
 }
-.main-sec form .formdiv .button a {
+.main-sec footer .FormDiv .button a {
   text-decoration: none;
   color: #000;
 }
-.main-sec form .formdiv .button:hover {
+.main-sec footer .FormDiv .button:hover {
   background: linear-gradient(#ff8c00, #ffd700);
   box-shadow: 0 8px 20px rgba(255, 140, 0, 0.7);
   transform: scale(1.05);
 }
-.main-sec form .formdiv .button:active {
+.main-sec footer .FormDiv .button:active {
   transform: scale(0.95);
   box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
 }
-.main-sec form .formdiv p {
-  display: inline-block;
+.main-sec footer .next-to-form {
+  width: 600px;
+  height: 600px;
 }
-.main-sec form .formdiv ul {
-  display: inline-block;
+.main-sec footer .next-to-form .textdiv {
+  text-align: left;
 }
-.main-sec form .formdiv ul li {
+.main-sec footer .next-to-form .textdiv ul li {
   color: #aaa;
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 400;
   text-align: left;
+}
+.main-sec .contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.main-sec .contact-container .contact-div {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  height: 600px;
+}
+.main-sec .contact-container .contact-div h2 {
+  text-align: left;
+}
+.main-sec .contact-container .contact-div img {
+  position: absolute;
+  width: 70px;
+  bottom: 10px;
+  left: 10px;
+}
+.main-sec .contact-container .contacts-text {
+  padding: 20px;
+  width: 50%;
+  height: 600px;
+  text-align: left;
+}
+.main-sec .contact-container .contacts-text h1 {
+  text-align: left;
+  font-size: 25px;
+}
+.main-sec .contact-container .contacts-text p {
+  font-size: 20px;
+}
+.main-sec .contact-container .contacts-text ul li {
+  font-size: 19px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=styles.css.map */
