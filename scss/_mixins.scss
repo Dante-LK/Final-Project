@@ -29,10 +29,11 @@
 }
 
 @mixin timelinebutton {
-  a{
+  a {
     text-decoration: none;
     color: #000;
   }
+
   margin-top: 5px;
   text-align: center;
   text-decoration: none;
@@ -46,6 +47,7 @@
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 5px 15px;
+  cursor: pointer;
 
 
   &:hover {
@@ -58,4 +60,10 @@
     transform: scale(0.95); // Slightly shrinks when clicked
     box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
   }
+}
+
+@mixin background-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
 }

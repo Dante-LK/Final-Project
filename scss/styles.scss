@@ -201,9 +201,7 @@ header {
   .Aimgdiv {
     @include flex-container;
     flex-wrap: wrap;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    padding: 20px;
+    @include background-card;
 
     .aboutimg {
       display: inline-block;
@@ -219,16 +217,14 @@ header {
 
   footer {
     @include flex-container;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    padding: 20px;
+    @include background-card;
 
     .FormDiv {
       position: relative;
       width: 600px;
       height: 600px;
 
-      img{
+      img {
         position: absolute;
         width: 70px;
         bottom: 10px;
@@ -285,18 +281,17 @@ header {
   .contact-container {
     @include flex-container;
     position: relative;
+
     .contact-div {
       h2 {
         text-align: left;
       }
 
-      background-color: #1f1f1f;
-      border-radius: 10px;
-      padding: 20px;
+      @include background-card;
       width: 50%;
       height: 600px;
 
-      img{
+      img {
         position: absolute;
         width: 70px;
         bottom: 10px;
@@ -329,6 +324,65 @@ header {
 
 
   }
+
+  #offers {
+    text-align: left;
+  }
+
+
+  .container-service {
+    @include flex-container;
+
+    .service-text-container {
+      @include background-card;
+      width: 600px;
+      height: 400px;
+    }
+
+    .service-button {
+      @include flex-container;
+
+      .timelinebutton {
+        @include timelinebutton;
+
+      }
+
+      width: 600px;
+      height: 400px;
+    }
+
+  }
+
+  .timeline-exp {
+    @include background-card;
+    margin-top: 40px;
+    width: 600px;
+    height: 300px;
+    margin-top: 40px;
+
+    .timelinebutton {
+      @include timelinebutton;
+    }
+  }
+
+  .recomending {
+    @include background-card;
+    margin-top: 40px;
+
+    ul {
+      li {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+
+
+
+
 
 
 }
