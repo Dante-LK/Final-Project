@@ -502,4 +502,18 @@ header .fa-bars {
 .main-sec .story-container .story-img img {
   width: 600px;
   border-radius: 10px;
+}
+@media (max-width: 1207px) {
+  .main-sec .story-img {
+    width: 400px;
+  }
+  .main-sec .story-img img {
+    width: 400px;
+  }
+  .main-sec .story-text p {
+    font-size: 20px;
+  }
+  .main-sec .story-text li {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */

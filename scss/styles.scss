@@ -460,6 +460,26 @@ header {
     }
   }
 
+  @media (max-width: 1207px){
+    .story-img{
+      width: 400px;
+      img{
+        width: 400px;
+      }
+    }
+
+    .story-text{
+      p{
+        font-size: 20px;
+      }
+      
+      li{
+        font-size: 15px;
+      }
+    }
+  }
+
+
 
 
 
