@@ -426,6 +426,40 @@ header {
   }
 
 
+  .timelineheader{
+    h1{
+      text-align: left;
+    }
+    margin-bottom: 30px;
+  }
+
+  .story-container{
+    @include flex-container;
+    margin-bottom: 50px;
+    .story-text{
+      width: 600px;
+      span{
+        font-weight: 700;
+        color: white;
+      }
+      ul{
+        li{
+          font-size: 25px;
+          text-align: left;
+        }
+      }
+    }
+
+    .story-img{
+      width: 600px;
+      @include background-card;
+      img{
+        width: 600px;
+        border-radius: 10px;
+      }
+    }
+  }
+
 
 
 
