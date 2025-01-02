@@ -219,6 +219,39 @@ header .fa-bars {
   transform: scale(0.95);
   box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
 }
+@media (max-width: 668px) {
+  .main-sec .aboutimg {
+    height: 300px;
+  }
+}
+@media (max-width: 598px) {
+  .main-sec .Aimgdiv h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (max-width: 383px) {
+  .main-sec .Aimgdiv h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .main-sec .Aimgdiv p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 237px) {
+  .main-sec .Aimgdiv h1 {
+    font-size: 19px;
+    text-align: center;
+  }
+  .main-sec .Aimgdiv .aboutimg {
+    height: 200px;
+  }
+  .main-sec .Aimgdiv .timelinebutton {
+    width: 100;
+    font-size: 12px;
+  }
+}
 .main-sec footer {
   display: flex;
   justify-content: space-between;

@@ -214,6 +214,54 @@ header {
     }
   }
 
+  @media (max-width: 668px) {
+    .aboutimg {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 598px) {
+    .Aimgdiv {
+      h1 {
+        font-size: 30px;
+        text-align: center
+      }
+    }
+  }
+
+  @media (max-width: 383px) {
+    .Aimgdiv {
+      h1 {
+        font-size: 25px;
+        text-align: center
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 237px) {
+    .Aimgdiv {
+      h1 {
+        font-size: 19px;
+        text-align: center
+      }
+
+      .aboutimg {
+        height: 200px;
+      }
+
+      .timelinebutton {
+        width: 100;
+        font-size: 12px;
+
+      }
+
+    }
+  }
+
   footer {
     @include flex-container;
     @include background-card;
